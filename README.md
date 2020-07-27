@@ -3,6 +3,8 @@ The main aim of oops is to implement real world entities.An object oriented lang
 An object is an instance of class.An object consists of state(attributes), behaviour(methods) and identity.
 ## Class
 A class is a blueprint from which you create an object.Class does not consume space.
+## Constructor
+A constructor is a block of code which initialises the object. It is not a method since it does not have a return type. 
 
 ## Polymorphism
 It refers to differentiating between methods of same name that differ on number of parameters or type of parameters.
@@ -112,3 +114,30 @@ Protected: Protected methods can be accessed with the package and different pack
 
 ![alt text](https://github.com/arhankundu99/Java-oops/blob/master/Access-Modifiers-in-Java.png)
 
+## Super keyword
+Super keyword is used to refer to parent class objects from child class.
+```java
+class A
+{   
+    A(){
+        System.out.println("This is constructor A");
+    }
+    void method() 
+    { 
+        System.out.println("This is class A"); 
+    } 
+} 
+class B extends A
+{ 
+    B(){
+        super() // calls the construtor of class A
+        System.out.println("This is constructor B");
+    }
+    void method() 
+    { 
+        super.method() // calls method function of A
+        System.out.println("This is class B"); 
+    } 
+} 
+```
+NOTE: Call to super() must be first statement in Derived Class constructor.
