@@ -96,4 +96,19 @@ To hide implementation details. (Real life Eg: a man is driving a car. He knows 
 Static methods and variables are a property of class. They can be called without creating an object. Same static variable is shared between all instances of class. Final variables cannot be changed after assignment.
 
 ## Access modifiers in java
+There are 4 types of access modifiers in java
+1) Default (No keyword required)
+2) Private
+3) Public
+4) Protected
+
+Private: Private methods or variables can be ONLY accessed within class only.Even if we inherit this class, we cannot access the private methods from child class.
+
+Public: Public methods or classes or fields can be accessed from anywhere.
+
+Default: Default methods can be accessed within the package only.
+
+Protected: Protected methods can be accessed with the package and different package subclass.
+
+![alt text](https://github.com/arhankundu99/Java-oops/blob/master/Access-Modifiers-in-Java.png)
 
