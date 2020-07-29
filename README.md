@@ -87,12 +87,16 @@ In encapsulation, we make the fields private and write public methods to change 
 
 What is the benefit of encapsulation?
 It hides the data preventing unauthorized access to them.
+We can make the variables of the class as read-only or write-only depending on our requirement.
 
 ## Abstraction (Implementation hiding)
 Abstraction can be achieved through abstract classes(0-100%) or interfaces(100 %).An abstract method has no body.
+NOTE: Abstract Class cannot be inherited.
 
 Why use abstraction?
 To hide implementation details. (Real life Eg: a man is driving a car. He knows that by pressing break, the car will slow down. but he does not know how the car slows down.This is an example of abstraction.
+To achieve security - hide certain details and only show the important details of an object.
+Abstract methods are mostly declared where two or more subclasses are also doing the same thing in different ways through different implementations.
 
 ## Static and final in java
 Static methods and variables are a property of class. They can be called without creating an object. Same static variable is shared between all instances of class. Final variables cannot be changed after assignment.
