@@ -100,6 +100,11 @@ Abstract methods are mostly declared where two or more subclasses are also doing
 
 ## Static and final in java
 Static methods and variables are a property of class. They can be called without creating an object. Same static variable is shared between all instances of class. Final variables cannot be changed after assignment.
+1) Static methods can be inherited but cannot be overriden.
+2) Final methods cannot be inherited and overriden. 
+3) We can overload a static method and convert it into non-startic method (As long as parameters are different)
+4) A static method can call only other static methods; it cannot call a non-static method.(Non static methods can access static data members and static methods)
+5) static methods can ONLY access static methods and static data member.
 
 ## Access modifiers in java
 There are 4 types of access modifiers in java
