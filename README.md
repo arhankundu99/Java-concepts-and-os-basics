@@ -150,3 +150,6 @@ class B extends A
 } 
 ```
 NOTE: Call to super() must be first statement in Derived Class constructor.
+
+## this keyword
+`this` keyword is used to refer to the current instance of the class. `this` keyword is used to access the variables of the class. `this` keyword is similar to python's `self` keyword. `__init__` function in python is the constructor of the class.
