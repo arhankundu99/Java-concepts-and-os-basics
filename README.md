@@ -91,7 +91,7 @@ We can make the variables of the class as read-only or write-only depending on o
 
 ## Abstraction (Implementation hiding)
 Abstraction can be achieved through abstract classes(0-100%) or interfaces(100 %).An abstract method has no body.
-NOTE: Abstract Class cannot be inherited.
+NOTE: We cannot create an object of abstract class. 
 
 Why use abstraction?
 To hide implementation details. (Real life Eg: a man is driving a car. He knows that by pressing break, the car will slow down. but he does not know how the car slows down.This is an example of abstraction.
