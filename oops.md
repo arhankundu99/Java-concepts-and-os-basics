@@ -14,10 +14,11 @@ public int sum(int a, int b, int c){return a+b+c;}
 public double sum(double a, double b){return a+b;}
 ```
 Types of polymorphism:
-1) Overloading.
-2) Overriding.(If we inherit the methods of a parent class using `extends` keyword and we want to modify a inherited method in the child class. This modification of inherited method is known as overriding).We can only override methods, not class variables
+1) Overloading. (calls to its methods are done at static binding)
+2) Overriding.(If we inherit the methods of a parent class using `extends` keyword and we want to modify a inherited method in the child class. This modification of inherited method is known as overriding).(calls to its methods are done at dynamic binding).We can only override methods, not class variables
 Java provides operator overloading also. `+` can be used for addition of 2 numbers and concatenation of 2 strings. 
 
+NOTE: Late binding is only used to public access members of a class.
 NOTE: STATIC and FINAL Methods CANNOT be overriden.Final methods can be inherited. Static methods CANNOT be inherited.
 ```java
 class A {
@@ -101,11 +102,54 @@ Abstract methods are mostly declared where two or more subclasses are also doing
 ## Static and final in java
 Static methods and variables are a property of class. They can be called without creating an object. Same static variable is shared between all instances of class. Final variables cannot be changed after assignment.
 1) Static methods can be inherited but cannot be overriden.
-2) Final methods cannot be inherited and overriden. 
+2) Final methods can be inherited and but not overriden. 
 3) We can overload a static method and convert it into non-startic method (As long as parameters are different)
 4) A static method can call only other static methods; it cannot call a non-static method.(Non static methods can access static data members and static methods)
 5) static methods can ONLY access static methods and static data member.
 6) Final Class cannot be inherited
+
+```java
+public class Writer {
+    public static void write() {
+        System.out.println("Writing");
+    }
+}
+
+public class Author extends Writer {
+    public static void write() {
+        System.out.println("Writing book");
+    }
+}
+
+public class Programmer extends Writer {
+
+    public static void write() {
+        System.out.println("Writing code");
+    }
+
+    public static void main(String[] args) {
+        Writer w = new Programmer();
+        w.write();
+
+        Writer secondWriter = new Author();
+        secondWriter.write();
+
+        Writer thirdWriter = null;
+        thirdWriter.write();
+
+        Author firstAuthor = new Author();
+        firstAuthor.write();
+    }
+}
+```
+
+Output:
+```java
+Writing
+Writing
+Writing
+Writing book
+```
 
 ## Access modifiers in java
 There are 4 types of access modifiers in java
