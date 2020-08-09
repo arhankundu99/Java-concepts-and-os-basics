@@ -105,6 +105,7 @@ Static methods and variables are a property of class. They can be called without
 3) We can overload a static method and convert it into non-startic method (As long as parameters are different)
 4) A static method can call only other static methods; it cannot call a non-static method.(Non static methods can access static data members and static methods)
 5) static methods can ONLY access static methods and static data member.
+6) Final Class cannot be inherited
 
 ## Access modifiers in java
 There are 4 types of access modifiers in java
