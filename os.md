@@ -16,7 +16,7 @@
 ## Scheduling Algorithms:
 1) First Come First Serve (FCFS): The process which comes first in the queue is executed first. Implemented using a FIFO queue. It can cause long waiting times.
 
-2) Shortest Job First Algorithm (SJF): The process which have low burst time are scheduled first. In case if a tie, FCFS is used. NOTE that it is non-preemtive algorithm (That means a process cannot interupt another process which is in execution). Average waiting times are low. Can cause Starvation
+2) **Shortest Job First Algorithm (SJF)**: The process which have low burst time are scheduled first. In case if a tie, FCFS is used. NOTE that it is non-preemtive algorithm (That means a process cannot interupt another process which is in execution). Average waiting times are low. Can cause Starvation
 
 3) Longest Job First Algorithm (LJF): Similar to SJF except that high burst time processes are scheduled first. Non-preemtive algorithm.
 
