@@ -62,4 +62,11 @@ Number of pages = virtual Address space / Frame Size
 2) Optimal Method: In this algorithm, when the frames are full, the page which is removed is the page which is not required for the longest duration of time. In practical, it is not possible.
 3) LRU
 
+## Virtual Memory explaination with the help of an example:
+Let's assume that an OS requires 300 MB of memory to store all the running programs. However, there's currently only 50 MB of available physical memory stored on the RAM.
+
+The OS will then set up 250 MB of virtual memory and use a program called the Virtual Memory Manager(VMM) to manage that 250 MB.
+So, in this case, the VMM will create a file on the hard disk that is 250 MB in size to store extra memory that is required.
+The OS will now proceed to address memory as it considers 300 MB of real memory stored in the RAM, even if only 50 MB space is available.
+It is the job of the VMM to manage 300 MB memory even if just 50 MB of real memory space is available.
 
