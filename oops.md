@@ -91,6 +91,7 @@ It hides the data preventing unauthorized access to them.
 We can make the variables of the class as read-only or write-only depending on our requirement.
 
 ## Abstraction (Implementation hiding)
+Abstraction: Showing Functionality and hiding implementation details.
 Abstraction can be achieved through abstract classes(0-100%) or interfaces(100 %).An abstract method has no body.
 NOTE: We cannot create an object of abstract class. 
 
