@@ -96,7 +96,7 @@ Abstraction can be achieved through abstract classes(0-100%) or interfaces(100 %
 NOTE: We cannot create an object of abstract class. 
 
 Why use abstraction?
-** Abstraction helps to reduce the complexity of the design and implementation process of software. **
+**Abstraction helps to reduce the complexity of the design and implementation process of software.** <br/>
 To hide implementation details. (Real life Eg: a man is driving a car. He knows that by pressing break, the car will slow down. but he does not know how the car slows down.This is an example of abstraction.
 To achieve security - hide certain details and only show the important details of an object.
 Abstract methods are mostly declared where two or more subclasses are also doing the same thing in different ways through different implementations.
