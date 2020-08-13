@@ -204,3 +204,26 @@ NOTE: Call to super() must be first statement in Derived Class constructor.
 
 ## What is an API?
 An API is the interface through which you access someone elses code.
+
+## Singleton class
+The main purpose of singleton class is to create only 1 instance of this class. You cannot create multiple instances of this class.
+```java
+class singleton{
+    private static singleton instance = null;
+    private singleton(){
+        //do something
+    }
+    public static singleton getInstance(){
+        if(instance == null){
+            instance = new singleton();
+        }
+        return instance;
+    }
+}
+public static void main(String[] args){
+    singleton x = singleton.getInstance();
+    singleton y = singleton.getInstance();
+    
+    // x and y refer to same instance
+}
+```
