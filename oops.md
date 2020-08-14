@@ -100,6 +100,10 @@ Why use abstraction?
 To hide implementation details. (Real life Eg: a man is driving a car. He knows that by pressing break, the car will slow down. but he does not know how the car slows down.This is an example of abstraction.
 To achieve security - hide certain details and only show the important details of an object. <br/>
 
+If we want to add new methods in the future, then an abstract class is a better choice. Because if we add new methods to an interface, then all of the classes that already implemented that interface will have to be changed to implement the new methods.
+
+If the functionality we are creating will be useful across a wide range of disparate objects or if we want multiple inheritances, use an interface.
+
 **Abstract methods are mostly declared where two or more subclasses are also doing the same thing in different ways through different implementations.**
 
 ## Static and final in java
