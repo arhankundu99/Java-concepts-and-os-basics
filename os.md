@@ -1,3 +1,9 @@
+# OS
+Operating system is a software that takes control of our machine.
+
+User <-----> Applications <-----> OS <-----> Hardware
+Applications do not interact with Hardware. Applications interact with OS and OS interacts with hardware and viceversa.  
+
 # CPU Scheduling in OS
 
 ## Important terms
