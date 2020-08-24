@@ -23,7 +23,7 @@ int *p = (int*) malloc(sizeof(int))
 ```
 
 # Calloc
-Calloc stands for clear allocation. It is also used to dynamically allocate memory. <br/>
+Calloc stands for contigious allocation. It is also used to dynamically allocate memory. <br/>
 Calloc allocates multiple blocks of memory.
 ```c
 int *p = (int*)calloc(10, sizeof(int))
