@@ -27,7 +27,7 @@ Calloc stands for contigious allocation. It is also used to dynamically allocate
 Calloc allocates multiple blocks of memory.
 ```c
 int *p = (int*)calloc(10, sizeof(int))
-int *p = (int*) malloc(10*sizeof(int))
+int *p = (int*)malloc(10*sizeof(int))
 ```
 Both statements are equicalent.
 
