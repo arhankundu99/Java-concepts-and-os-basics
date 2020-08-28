@@ -1,4 +1,11 @@
-The main aim of oops is to implement real world entities.An object oriented language uses objects in programming
+## What are oops and why do we need it?
+Using objects in programming.The main aim of oops is to implement real world entities.An object oriented language uses objects in programming. <br/>
+To realise the importance of oops we will compare c(Not object oriented) and java(object oriented) <br/>
+1) Code becomes simple when we use classes because it groups the variables and methods.
+2) C does not support overloading. That means if you have a function `int sum(int x, int y)` and want to create another function which takes 3 parameters then you would have to create a function with **another** name. You cannot use the same name which you can do in java.
+3) Java has encapsulation which means we can make data more secure. We cannot do that in C.
+4) Java has access modifiers and C doesn't and there are many more advantages of oops.
+
 ## Object
 An object is an instance of class.An object consists of state(attributes), behaviour(methods) and identity.
 ## Class
