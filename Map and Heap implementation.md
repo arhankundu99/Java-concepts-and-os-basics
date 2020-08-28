@@ -20,3 +20,7 @@ Hashing is a process of changing the value of a key to a hashcode using a hash f
 1) Used in string matching algorithm: Rabin-Karp algorithm
 2) When we login to a website, the password is first converted to a hash value and then it is checked in the servers. Servers do not contain the real passwords for security reasons.They contain the hash values of passwords.
 3) Phone book :)
+
+# References 
+1) <https://www.geeksforgeeks.org/differences-between-hashmap-and-hashtable-in-java>
+2) <https://www.geeksforgeeks.org/applications-of-hashing>
