@@ -24,3 +24,4 @@ Hashing is a process of changing the value of a key to a hashcode using a hash f
 # References 
 1) <https://www.geeksforgeeks.org/differences-between-hashmap-and-hashtable-in-java>
 2) <https://www.geeksforgeeks.org/applications-of-hashing>
+3) <https://stackoverflow.com/questions/1085709/what-does-synchronized-mean>
