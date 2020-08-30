@@ -25,3 +25,43 @@ Hashing is a process of changing the value of a key to a hashcode using a hash f
 1) <https://www.geeksforgeeks.org/differences-between-hashmap-and-hashtable-in-java>
 2) <https://www.geeksforgeeks.org/applications-of-hashing>
 3) <https://stackoverflow.com/questions/1085709/what-does-synchronized-mean>
+
+# Comparing same objects in map or set
+```java
+import java.io.*;
+import java.util.*;
+
+class GFG {
+	public static void main (String[] args) {
+		Set<pair>set = new HashSet<>();
+		set.add(new pair("Apple", 40));
+		set.add(new pair("Apple", 40));
+		
+		set.add(new pair("Banana", 40));
+		set.add(new pair("Banana", 50));
+		
+		System.out.println(set.size());
+		
+	}
+}
+class pair{
+    String name;
+    int val;
+    pair(String name, int val){
+        this.name = name;
+        this.val = val;
+    }
+    @Override
+    public int hashCode(){
+        int hashCode = val + name.hashCode();
+        System.out.println(hashCode);
+        return hashCode;
+    }
+    @Override
+    public boolean equals(Object obj){
+        pair pair = (pair) obj;
+        if(pair.name.equals(this.name) && pair.val == this.val)return true;
+        return false;
+    }
+}
+```
