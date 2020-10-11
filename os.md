@@ -1,7 +1,7 @@
 # OS
 Operating system is a software that takes control of our machine.
 
-User <-----> Applications <-----> OS <-----> Hardware
+User <-----> Applications <-----> OS <-----> Hardware <br/>
 Applications do not interact with Hardware. Applications interact with OS and OS interacts with hardware and viceversa.  
 
 # CPU Scheduling in OS
@@ -64,7 +64,7 @@ Number of pages = virtual Address space / Frame Size
 **Page Fault**: A page fault happens when a running program accesses a memory page that is mapped into the virtual address space, but not loaded in physical memory.
 
 ## Page replacement Algorithms:
-1) FIFO
+1) FIFO: First In first out algorithm.
 2) Optimal Method: In this algorithm, when the frames are full, the page which is removed is the page which is not required for the longest duration of time. In practical, it is not possible.
 3) LRU
 
