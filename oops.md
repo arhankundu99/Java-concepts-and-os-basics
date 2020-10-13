@@ -26,7 +26,7 @@ Types of polymorphism:
 Java provides operator overloading also. `+` can be used for addition of 2 numbers and concatenation of 2 strings. 
 
 NOTE: Late binding is only used to public access members of a class.
-NOTE: STATIC and FINAL Methods CANNOT be overriden.Final methods can be inherited. Static methods CANNOT be inherited.
+NOTE: STATIC and FINAL Methods CANNOT be overriden.Final and static methods can be inherited.
 ```java
 class A {
     public static void display() {
