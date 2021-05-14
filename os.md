@@ -1,5 +1,8 @@
 # OS
-Operating system is a software that takes control of our machine.
+Operating system is a software that controls the hardware system, hides the hardware complexity.
+
+Visual metaphor of OS: An OS is like a toy shop manager. Manages CPU resources, Memory Resources, peripheral devices like network cards, fair resourse access by programs according to some predefined policies. Also ensures that the programs are isolated and protected from one another.
+
 
 User <-----> Applications <-----> OS <-----> Hardware <br/>
 Applications do not interact with Hardware. Applications interact with OS and OS interacts with hardware and viceversa.  
