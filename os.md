@@ -1,4 +1,4 @@
-# OS
+# Introduction
 Operating system is a software that controls the hardware system, hides the hardware complexity.
 
 Visual metaphor of OS: An OS is like a toy shop manager. Manages CPU resources, Memory Resources, peripheral devices like network cards, fair resourse access by programs according to some predefined policies. Also ensures that the programs are isolated and protected from one another.
@@ -6,6 +6,12 @@ Visual metaphor of OS: An OS is like a toy shop manager. Manages CPU resources, 
 
 User <-----> Applications <-----> OS <-----> Hardware <br/>
 Applications do not interact with Hardware. Applications interact with OS and OS interacts with hardware and viceversa.  
+
+# Process and Process management
+**Process**: An instance of an executing program.
+
+## Difference between an application and a process
+An application is stored in hard disk or a flash drive (static) whereas the process is the current instance of the application in the main memory (RAM).
 
 # CPU Scheduling in OS
 
