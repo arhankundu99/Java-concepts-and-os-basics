@@ -212,6 +212,8 @@ NOTE: Call to super() must be first statement in Derived Class constructor.
 
 ## this keyword
 `this` keyword is used to refer to the current instance of the class. `this` keyword is used to access the variables of the class. `this` keyword is similar to python's `self` keyword. `__init__` function in python is the constructor of the class.
+The most common use of the this keyword is to eliminate the confusion between class attributes and parameters with the same name. <br/>
+<https://www.geeksforgeeks.org/this-reference-in-java/>
 
 ## What is an API?
 An API is the interface through which you access someone elses code.
